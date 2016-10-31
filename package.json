@@ -1,0 +1,27 @@
+{
+  "name": "toposort-keys",
+  "version": "1.0.0",
+  "description": "flexible topological sorting of different DAG structures",
+  "keywords": [
+    "graph", "toposort", "topological sorting", "dag", "predecessors"
+  ],
+  "author": "Hugo Villeneuve",
+  "main": "./toposort-pred.js",
+  "dependencies": {},
+  "devDependencies": {
+    "benchmark": "^2.1.2",
+    "cotest": "^1.6.1"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hville/toposort-keys.git"
+  },
+  "private": false,
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
