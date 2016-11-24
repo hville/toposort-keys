@@ -1,6 +1,6 @@
 {
   "name": "toposort-keys",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "flexible topological sorting of different DAG structures",
   "keywords": [
     "graph", "toposort", "topological sorting", "dag", "predecessors"
