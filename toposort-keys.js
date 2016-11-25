@@ -20,7 +20,9 @@ function topoSortKeys(dag, predFcn, lastSort) {
 	while (i--) if (!sNs[ids[i]]) ids[--ie] = ids[i]
 	while (is > ie) {
 		var eps = predFcn(dag, ids[--is])
-		if (eps) for (var p of eps) if (!--sNs[p]) ids[--ie] = p
+		if (eps !== undefined) for (var k=0; k<eps.length; ++k) {
+			if (--sNs[eps[k]] === 0) ids[--ie] = eps[k]
+		}
 	}
 	return is ? null : ids
 }
@@ -31,7 +33,9 @@ function count(dag, predFcn, ids) {
 	for (var i=0; i<ids.length; ++i) {
 		var sps = predFcn(dag, ids[i])
 		if (isSort && sNs[ids[i]]) isSort = false
-		if (sps) for (var p of sps) sNs[p] = 1 + (sNs[p] || 0)
+		if (sps !== undefined) for (var j=0; j<sps.length; ++j) {
+			sNs[sps[j]] = 1 + (sNs[sps[j]] || 0)
+		}
 	}
 	return isSort || sNs
 }
