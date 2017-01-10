@@ -6,7 +6,7 @@
     "graph", "toposort", "topological sorting", "dag", "predecessors"
   ],
   "author": "Hugo Villeneuve",
-  "main": "./toposort-pred.js",
+  "main": "./toposort-keys.js",
   "dependencies": {},
   "devDependencies": {
     "benchmark": "^2.1.2",
