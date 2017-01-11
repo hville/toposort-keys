@@ -1,5 +1,5 @@
 var ct = require('cotest')
-var tsk = require('./toposort-keys')
+var tsk = require('../toposort-keys')
 
 var dag = {}
 

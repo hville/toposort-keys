@@ -1,6 +1,4 @@
 .git/
 node_modules/
-bld/
 old/
-info/
 *.log

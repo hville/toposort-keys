@@ -3,14 +3,19 @@
   "version": "1.0.3",
   "description": "flexible topological sorting of different DAG structures",
   "keywords": [
-    "graph", "toposort", "topological sorting", "dag", "predecessors"
+    "graph",
+    "toposort",
+    "topological sorting",
+    "dag",
+    "predecessors"
   ],
   "author": "Hugo Villeneuve",
-  "main": "./toposort-pred.js",
+  "main": "./toposort-keys.js",
   "dependencies": {},
   "devDependencies": {
-    "benchmark": "^2.1.2",
-    "cotest": "^1.6.1"
+    "array-shuffle": "^1.0.1",
+    "benchmark": "^2.1.3",
+    "cotest": "^2.0.1"
   },
   "scripts": {
     "test": "node test"
