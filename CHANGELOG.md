@@ -14,7 +14,6 @@
 ### Added
 - `CHANGELOG.md`
 - `.editorconfig`
-- Documentation on the optional sampling function arguments
 
 
 ## [1.0.3] - 2016-11-25
